@@ -17,9 +17,8 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('coach');
-            $table->double('averageplayers');
-            $table->double('numberplayers');
-            
+            $table->double('averageplayers')->default(0);
+            $table->double('numberplayers')->default(0);
             $table->foreignId('sport_id')->constrained('sports');
             $table->timestamps();
         });

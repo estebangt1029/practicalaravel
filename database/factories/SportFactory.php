@@ -16,12 +16,13 @@ class SportFactory extends Factory
      */
     public function definition()
     {
+        $categoria=['masculino', 'femenino'];
         return [
             //
             'name'=>fake()->name(),
-            'countryorigen'=>fake()->country(),
+            'countryorigin'=>fake()->country(),
             'description'=>fake()->paragraph(),
-            
+            'category'=>$categoria[rand(0,1)]
 
         ];
     }

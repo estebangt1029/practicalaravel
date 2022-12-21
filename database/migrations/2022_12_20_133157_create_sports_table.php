@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('category');
-            $table->double('countryorigin');
+            $table->string('countryorigin');
             $table->string('description');
 
 
